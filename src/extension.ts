@@ -19,7 +19,8 @@ export function activate(context: vscode.ExtensionContext): void {
 
     const document = editor.document;
     const fullText = document.getText();
-    const jarPath = path.join(context.extensionPath, 'lib', 'ccomment.jar');
+    const jarPath = path.join(context.extensionPath, 'lib', 'comment.jar ', context.extensionPath);
+    console.log(jarPath);
     const javaCmd = 'java -jar ' + jarPath;
     // Execute the Java JAR and pass the file content
     const process = exec(javaCmd, (error, stdout, stderr) => {
