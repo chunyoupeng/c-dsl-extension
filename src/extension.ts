@@ -21,7 +21,7 @@ export function activate(context: vscode.ExtensionContext): void {
     const fullText = document.getText();
     const jarPath = path.join(context.extensionPath, 'lib', 'TestC.jar');
     console.log(jarPath);
-    const javaCmd = 'java -jar ' + jarPath;
+    const javaCmd = 'java -Dfile.encoding=UTF-8 -jar ' + jarPath;
     // Execute the Java JAR and pass the file content
     const process = exec(javaCmd, (error, stdout, stderr) => {
         if (error) {
