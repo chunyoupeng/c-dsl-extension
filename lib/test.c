@@ -1,19 +1,11 @@
-#include <stdio.h>
-int main(){
-  /***
-      Subcriber
-   */
+@transaction("test")
+@desc("it is a test")
+struct TopicA{
+	@attr("WORKSTATE")
+	@name("工作状态")
+	@bitInfo(69, 70, 2)
+	@valueRange([0, 3))
+	@valueDesc("0为单脉冲、1为SAR、2～3预留")
+	char* workState;
 
-//@SUB(subscriber_msg_func msg_func, void* msg_arg, const Topic* topic)   
-
-  /***
-      Publisher
-   */
-
-//@PUB(const Topic* topic, const TopicData* topicData)
-
-  printf("Hello, World!");
-}
-
-
-
+};

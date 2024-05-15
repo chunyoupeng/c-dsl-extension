@@ -35,6 +35,7 @@ export function activate(context: vscode.ExtensionContext): void {
 
       // 执行Java JAR并传递文件内容
       const process = exec(javaCmd, (error, stdout, stderr) => {
+
         if (error) {
           console.error(`Error running JAR: ${error}`);
           return;
