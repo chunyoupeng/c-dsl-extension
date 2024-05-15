@@ -4,11 +4,8 @@
   "description": "Processing C comment",
   "version": "0.0.5",
   "engines": {
-<<<<<<< HEAD
     "vscode": "^1.68.0"
-=======
-    "vscode": "^1.69.0"
->>>>>>> 34329bc0f048f6da5dfb5ad4488bc8f7cd303503
+ 
   },
   "categories": [
     "Other"
@@ -40,22 +37,17 @@
   "devDependencies": {
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
-<<<<<<< HEAD
     "@types/vscode": "^1.68.0",
-=======
-    "@types/vscode": "^1.69.0",
->>>>>>> 34329bc0f048f6da5dfb5ad4488bc8f7cd303503
+
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
     "@vscode/test-cli": "^0.0.4",
     "@vscode/test-electron": "^2.3.8",
     "eslint": "^8.56.0",
     "typescript": "^5.3.3"
-<<<<<<< HEAD
+
   },
   "dependencies": {
     "punycode": "^2.3.1"
-=======
->>>>>>> 34329bc0f048f6da5dfb5ad4488bc8f7cd303503
   }
 }
