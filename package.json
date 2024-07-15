@@ -2,10 +2,9 @@
   "name": "c-comment",
   "displayName": "c-comment",
   "description": "Processing C comment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.68.0"
- 
   },
   "categories": [
     "Other"
@@ -24,6 +23,18 @@
         "command": "c-comment.insertStruct",
         "title": "InsertStruct"
       }
+    ],
+    "keybindings": [
+      {
+        "command": "c-comment.helloWorld",
+        "key": "ctrl+alt+h",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "c-comment.insertStruct",
+        "key": "ctrl+alt+i",
+        "when": "editorTextFocus"
+      }
     ]
   },
   "scripts": {
@@ -38,14 +49,12 @@
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
     "@types/vscode": "^1.68.0",
-
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
     "@vscode/test-cli": "^0.0.4",
     "@vscode/test-electron": "^2.3.8",
     "eslint": "^8.56.0",
     "typescript": "^5.3.3"
-
   },
   "dependencies": {
     "punycode": "^2.3.1"
