@@ -2,7 +2,7 @@
   "name": "c-comment",
   "displayName": "c-comment",
   "description": "Processing C comment",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.68.0"
  

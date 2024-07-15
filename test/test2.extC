@@ -1,0 +1,10 @@
+@transaction("test5")
+@desc("it is a test")
+struct TopicA{
+	@attr("FR")
+	@name("频率码")
+	@bitInfo(84, 91, 8)
+	@valueRange([0, 100])
+	char* fr;
+
+};
